@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gio's Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Giovanny's Weather App</h1>
+        <form id="weatherForm">
+            <input type="text" id="city" placeholder="Enter a city name" required>
+            <label for="units">Units: </label>
+            <select id="units">
+                <option value="metric">Metric (°C)</option>
+                <option value="imperial">Imperial (°F)</option>
+            </select>
+            <button id="gbtn" type="submit">Get Weather</button>
+        </form>
+        <div id="weatherResult"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

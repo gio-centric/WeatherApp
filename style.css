@@ -1,0 +1,62 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0086fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid powderblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #96c5f8;
+    color: black;
+    border: 2px solid #001d91;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#gbtn:hover{
+    background-color: rgb(82, 82, 248);
+    transition: background-color 0.5s;
+    
+}
+
+#weatherResult {
+    margin-top: 20px;
+}
+
+#heading {
+    color: rgb(82, 82, 248);
+    font-family: verdana;
+    font-size: 125%;
+  }
+
+#units {
+    color: rgb(119, 119, 252);
+    font-family: verdana;
+  }
+
+  label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #96c5f8;
+  }
+
