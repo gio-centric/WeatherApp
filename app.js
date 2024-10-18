@@ -1,10 +1,11 @@
+const apiKey = window.API_KEY; // Gio's OpenWeatherMap API key
+
 document.getElementById('weatherForm').addEventListener('submit', function(e) {
     e.preventDefault(); // To prevent page refresh
 
     const city = document.getElementById('city').value;
     const units = document.getElementById('units').value;
-    const apiKey = window.API_KEY; // Gio's OpenWeatherMap API key
-
+    
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`)
         .then(response => response.json())
         .then(data => {
