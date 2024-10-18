@@ -3,7 +3,7 @@ document.getElementById('weatherForm').addEventListener('submit', function(e) {
 
     const city = document.getElementById('city').value;
     const units = document.getElementById('units').value;
-    const apiKey = process.env.NEXT_PUBLIC_GIO_API_KEY; // Gio's OpenWeatherMap API key
+    const apiKey = window.API_KEY; // Gio's OpenWeatherMap API key
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`)
         .then(response => response.json())
