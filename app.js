@@ -6,7 +6,7 @@ document.getElementById('weatherForm').addEventListener('submit', function(e) {
     const city = document.getElementById('city').value;
     const units = document.getElementById('units').value;
     
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`)
+    fetch(`/.netlify/functions/weather?city=${city}&units=${units}`)
         .then(response => response.json())
         .then(data => {
             if (data.cod === 200) {
