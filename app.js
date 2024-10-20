@@ -1,5 +1,4 @@
-const apiKey = window.API_KEY; // Gio's OpenWeatherMap API keys
-//const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+const apiKey = process.env.API_KEY;
 
 document.getElementById('weatherForm').addEventListener('submit', function(e) {
     e.preventDefault(); // To prevent page refresh
