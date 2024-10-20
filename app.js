@@ -1,5 +1,4 @@
-const apiKey = window.API_KEY; // Gio's OpenWeatherMap API keys
-//const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+//const apiKey = process.env.API_KEY;
 
 document.getElementById('weatherForm').addEventListener('submit', function(e) {
     e.preventDefault(); // To prevent page refresh
@@ -7,7 +6,7 @@ document.getElementById('weatherForm').addEventListener('submit', function(e) {
     const city = document.getElementById('city').value;
     const units = document.getElementById('units').value;
     
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`)
+    fetch(`/.netlify/functions/weather?city=${city}&units=${units}`)
         .then(response => response.json())
         .then(data => {
             if (data.cod === 200) {
