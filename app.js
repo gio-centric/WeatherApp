@@ -1,4 +1,4 @@
-const apiKey = process.env.API_KEY;
+//const apiKey = process.env.API_KEY;
 
 document.getElementById('weatherForm').addEventListener('submit', function(e) {
     e.preventDefault(); // To prevent page refresh
