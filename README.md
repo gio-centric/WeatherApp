@@ -11,3 +11,4 @@ A simple weather app that displays the current weather conditions for a given ci
 - CSS3: Styling of the app.
 - JavaScript: Logic used for fetching and the displaying weather data.
 - OpenWeatherMap API: For real-time weather data.
+- Netlify for hosting the app.
