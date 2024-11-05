@@ -1,7 +1,8 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #0086fb;
+    background: linear-gradient(180deg,#f5f552, #0086fb);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -34,10 +35,13 @@ button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#gbtn{
+    color:azure;
+}
+
 #gbtn:hover{
     background-color: rgb(82, 82, 248);
     transition: background-color 0.5s;
-    
 }
 
 #weatherResult {
@@ -45,18 +49,18 @@ button {
 }
 
 #heading {
-    color: rgb(82, 82, 248);
+    color: #0086fb;
     font-family: verdana;
     font-size: 125%;
-  }
-
+}
+  
 #units {
-    color: rgb(119, 119, 252);
+    color: #0086fb;
     font-family: verdana;
-  }
+}
 
-  label{
+label{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #96c5f8;
-  }
+}
 
