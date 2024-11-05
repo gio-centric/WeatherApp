@@ -1,7 +1,7 @@
 //const apiKey = process.env.API_KEY;
 
 document.getElementById('weatherForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // To prevent page refresh
+    e.preventDefault(); // Prevent's page refresh
 
     const city = document.getElementById('city').value;
     const units = document.getElementById('units').value;
@@ -12,8 +12,14 @@ document.getElementById('weatherForm').addEventListener('submit', function(e) {
             if (data.cod === 200) {
                 const unit_label = units === 'metric' ? '°C' : '°F';
                 const wind_speed_label = units === 'metric' ? 'm/s' : 'mph';
+
+                //get weather icon
+                const iconCode = data.weather[0].icon;
+                const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
                 const weatherResult = `
                     <h2>Weather in ${data.name}</h2>
+                    <img src="${iconUrl}" alt="${data.weather[0].description}">
                     <p>Temperature: ${data.main.temp}${unit_label}</p>
                     <p>Weather: ${data.weather[0].description}</p>
                     <p>Humidity: ${data.main.humidity}%</p>
